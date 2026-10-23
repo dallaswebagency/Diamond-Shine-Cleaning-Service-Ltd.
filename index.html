@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diamond Shine Cleaning | Home &amp; Commercial Cleaning in Edmonton</title>
+<meta name="description" content="Diamond Shine Residential &amp; Commercial Cleaning Service Ltd. House cleaning, commercial and industrial cleaning in Edmonton and surrounding communities. Free estimates, no long term contracts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2250; --navy2:#12306B; --royal:#1565B8; --sky:#5BBDF0; --cyan:#BFE6F8; --ice:#EAF6FD; --white:#fff;
+  --ink:#0E1B33; --mute:#4D5F7A; --line:rgba(11,34,80,.14);
+  --serif:'Fraunces',Georgia,serif; --sans:'Figtree',system-ui,sans-serif;
+  --facet:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 6L114 60 60 114 6 60Z' fill='none' stroke='%23ffffff' stroke-opacity='.10' stroke-width='1.5'/%3E%3Cpath d='M60 36L84 60 60 84 36 60Z' fill='%23ffffff' fill-opacity='.05'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px;overflow-x:clip}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{width:min(1220px,92%);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.05;letter-spacing:-.01em}
+h1 i,h2 i{font-style:italic;font-weight:500;color:var(--royal)}
+.kicker{display:inline-flex;align-items:center;gap:.7rem;font:700 .78rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--royal)}
+.kicker::before{content:"";width:10px;height:10px;background:var(--sky);transform:rotate(45deg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.6rem;border-radius:999px;font:700 .98rem/1 var(--sans);border:2px solid transparent;cursor:pointer;transition:.25s}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--royal)}
+.btn-sky{background:var(--sky);color:var(--navy)}
+.btn-sky:hover{background:#fff}
+.btn-ghost{border-color:currentColor}
+.btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
+.dia{width:14px;height:14px;background:var(--sky);transform:rotate(45deg);flex:none;display:inline-block}
+
+/* placeholders when a photo is not loaded */
+.ph{position:relative;overflow:hidden;background:var(--facet),linear-gradient(135deg,var(--navy) 0%,var(--royal) 58%,var(--sky) 100%)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* utility + nav */
+.util{background:var(--navy);color:#cfe3f6;font-size:.88rem}
+.util .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;flex-wrap:wrap}
+.util a{color:#fff;font-weight:600}
+.util .r{display:flex;gap:1.6rem}
+header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:92px}
+.logo img{height:74px;width:auto}
+.menu{display:flex;gap:1.9rem;font-weight:600;font-size:.97rem}
+.menu a{position:relative;padding:.3rem 0}
+.menu a::after{content:"";position:absolute;left:50%;bottom:-6px;width:7px;height:7px;background:var(--sky);transform:translateX(-50%) rotate(45deg) scale(0);transition:.25s}
+.menu a:hover::after{transform:translateX(-50%) rotate(45deg) scale(1)}
+.burger{display:none;background:none;border:2px solid var(--navy);border-radius:999px;padding:.55rem 1rem;font:700 .9rem var(--sans);cursor:pointer;color:var(--navy)}
+
+/* hero: two doors */
+.hero{padding:3.2rem 0 0;background:linear-gradient(180deg,var(--ice),#fff 70%)}
+.hero-head{display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:end;padding-bottom:2.4rem}
+.hero-head h1{font-size:clamp(2.8rem,6.2vw,5.6rem)}
+.hero-head p{color:var(--mute);font-size:1.12rem;max-width:26rem;padding-bottom:.4rem}
+.doors{position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:600px}
+.door{position:relative;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.door .ph{position:absolute;inset:0;z-index:-2}
+.door::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,34,80,.92),rgba(11,34,80,.18) 65%);z-index:-1}
+.door img{transition:transform .8s}
+.door:hover img{transform:scale(1.05)}
+.door.d1{clip-path:polygon(0 0,100% 0,92% 100%,0 100%);margin-right:-4%;padding:0 12% 3rem 8%;z-index:2}
+.door.d2{clip-path:polygon(8% 0,100% 0,100% 100%,0 100%);padding:0 8% 3rem 14%}
+.door .tag{font:700 .76rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem}
+.door h2{font-size:clamp(2rem,3.6vw,3.2rem);margin-bottom:1rem}
+.door ul{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.door li{font-size:.86rem;font-weight:600;padding:.35rem .8rem;border:1px solid rgba(255,255,255,.45);border-radius:999px;backdrop-filter:blur(4px);background:rgba(255,255,255,.1)}
+.door .go{display:inline-flex;align-items:center;gap:.7rem;font-weight:700;border-bottom:2px solid var(--sky);padding-bottom:.25rem}
+.door .go span{transition:.25s}
+.door:hover .go span{transform:translateX(6px)}
+.seam{position:absolute;left:50%;top:50%;z-index:5;transform:translate(-50%,-50%) rotate(45deg);width:128px;height:128px;background:var(--sky);display:grid;place-items:center;border:6px solid #fff;box-shadow:0 14px 40px rgba(11,34,80,.35)}
+.seam div{transform:rotate(-45deg);text-align:center;font:700 1.05rem/1.1 var(--serif);color:var(--navy);padding:.4rem}
+.seam small{display:block;font:700 .6rem var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-top:.2rem}
+
+/* facets band */
+.facets{background:var(--navy);color:#fff;position:relative}
+.facets .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.facet{display:flex;gap:1.1rem;align-items:center;padding:2rem 2rem 2rem 0}
+.facet+.facet{padding-left:2rem;border-left:1px solid rgba(255,255,255,.18)}
+.facet .gem{width:54px;height:54px;flex:none;background:linear-gradient(135deg,var(--cyan),var(--sky) 50%,var(--royal));clip-path:polygon(50% 0,100% 38%,50% 100%,0 38%);display:grid;place-items:center;color:var(--navy);font:700 1.1rem var(--serif);padding-top:.35rem}
+.facet b{display:block;font:700 1.2rem var(--serif)}
+.facet span{font-size:.93rem;color:#b9d3ec}
+
+/* residential */
+.res{padding:7rem 0 6rem;position:relative}
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.res h2{font-size:clamp(2.4rem,4.6vw,4rem);margin:1rem 0 1.2rem}
+.res .lead{color:var(--mute);max-width:32rem}
+.tabs{display:flex;gap:.4rem;margin:2rem 0 1rem;flex-wrap:wrap}
+.tab{border:2px solid var(--line);background:#fff;border-radius:999px;padding:.6rem 1.1rem;font:700 .9rem var(--sans);cursor:pointer;color:var(--navy);transition:.2s}
+.tab[aria-selected="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.panel{min-height:5.2rem;color:var(--ink);font-size:1.02rem;max-width:32rem}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.4rem;margin:1.6rem 0 2rem}
+.chips li{display:flex;gap:.7rem;align-items:center;font-weight:600;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.chips .dia{width:9px;height:9px}
+.link{display:inline-flex;gap:.7rem;align-items:center;font-weight:700;color:var(--royal);border-bottom:2px solid var(--sky);padding-bottom:.2rem}
+.link:hover{color:var(--navy)}
+.res-art{position:relative;padding:0 0 3.5rem 3.5rem}
+.res-main{aspect-ratio:4/3;clip-path:polygon(0 0,100% 0,100% 100%,12% 100%,0 86%);box-shadow:0 30px 60px -30px rgba(11,34,80,.5)}
+.res-small{position:absolute;left:0;bottom:0;width:42%;aspect-ratio:1/1;border:8px solid #fff;transform:rotate(-4deg);box-shadow:0 18px 40px -16px rgba(11,34,80,.5)}
+.res-badge{position:absolute;right:-1.2rem;top:-1.6rem;background:var(--sky);color:var(--navy);padding:1.1rem 1.3rem;font:700 1.05rem/1.1 var(--serif);transform:rotate(4deg);z-index:2}
+.res-badge small{display:block;font:700 .62rem var(--sans);letter-spacing:.16em;text-transform:uppercase}
+
+/* commercial */
+.com{background:var(--navy);color:#fff;padding:7rem 0;position:relative;overflow:hidden;clip-path:polygon(0 3rem,100% 0,100% calc(100% - 3rem),0 100%);margin-top:-3rem}
+.com::before{content:"";position:absolute;inset:0;background:var(--facet);opacity:.8}
+.com-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:center}
+.mos{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:.9rem}
+.mos .m1{grid-row:span 2;aspect-ratio:3/4.1}
+.mos .m2{aspect-ratio:16/9}
+.mos .m3{aspect-ratio:1/1}
+.mos .ph{border:1px solid rgba(255,255,255,.2)}
+.com h2{font-size:clamp(2.4rem,4.4vw,3.9rem);margin:1rem 0 1.2rem;color:#fff}
+.com h2 i{color:var(--sky)}
+.com .kicker{color:var(--cyan)}
+.com p.lead{color:#b9d3ec;max-width:30rem}
+.who{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.8rem 0 1.6rem}
+.who li{padding:.5rem 1rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-weight:600;font-size:.92rem;transition:.2s}
+.who li:hover{background:var(--sky);color:var(--navy);border-color:var(--sky)}
+.menu-list li{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;border-top:1px solid rgba(255,255,255,.2);font:600 1.3rem var(--serif)}
+.menu-list li:last-child{border-bottom:1px solid rgba(255,255,255,.2)}
+.menu-list em{font:500 .88rem var(--sans);font-style:normal;color:#9ec4e6;align-self:center}
+.com .link{color:var(--sky);margin-top:1.6rem}
+.com .link:hover{color:#fff}
+
+/* statement */
+.stmt{padding:7rem 0 6rem;position:relative;overflow:hidden}
+.stmt-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:5rem;align-items:center}
+.team{aspect-ratio:3/4;max-width:400px;clip-path:polygon(50% 0,100% 12%,100% 100%,0 100%,0 12%)}
+.stmt h2{font-size:clamp(3rem,7vw,6.2rem);line-height:.95}
+.stmt h2 span{display:block;color:var(--royal);font-style:italic;font-weight:500}
+.stmt p{color:var(--mute);max-width:32rem;margin:1.6rem 0 2rem;font-size:1.1rem}
+
+/* estimate */
+.est{background:var(--ice);padding:6rem 0 7rem;position:relative}
+.est-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:4.5rem;align-items:start}
+.est h2{font-size:clamp(2.4rem,4.6vw,4rem);margin:1rem 0 1.2rem}
+.est .lead{color:var(--mute);max-width:26rem}
+.contact-list{margin-top:2.2rem}
+.contact-list li{display:flex;gap:1rem;padding:1rem 0;border-top:1px solid var(--line);align-items:baseline}
+.contact-list li:last-child{border-bottom:1px solid var(--line)}
+.contact-list small{width:6.2rem;flex:none;font:700 .72rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--royal)}
+.contact-list b{font:600 1.25rem var(--serif);word-break:break-word}
+.contact-list a:hover{color:var(--royal)}
+.flow{background:#fff;padding:2.4rem;border-radius:4px;box-shadow:0 30px 60px -34px rgba(11,34,80,.45);position:relative}
+.steps{display:flex;gap:.5rem;margin-bottom:1.8rem}
+.steps span{flex:1;height:5px;background:var(--line);border-radius:3px}
+.steps span.on{background:var(--royal)}
+.flow h3{font-size:1.7rem;margin-bottom:1.2rem}
+.step{display:none}
+.step.on{display:block}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0}
+.opt label{display:block;text-align:center;padding:1.3rem .6rem;border:2px solid var(--line);cursor:pointer;font:700 1rem var(--sans);transition:.2s;border-radius:4px}
+.opt label span{display:block;font-weight:500;font-size:.8rem;color:var(--mute);margin-top:.2rem}
+.opt input:checked+label{border-color:var(--royal);background:var(--ice);color:var(--navy)}
+.opt input:focus-visible+label{outline:3px solid var(--sky)}
+.svcs{display:flex;flex-wrap:wrap;gap:.6rem}
+.svcs .opt label{padding:.65rem 1.1rem;border-radius:999px;font-size:.93rem}
+.fld{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fld label{display:block;font:700 .74rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.fld .full{grid-column:1/-1}
+.fld input,.fld textarea{display:block;width:100%;margin-top:.35rem;padding:.85rem .9rem;border:2px solid var(--line);font:400 1rem var(--sans);border-radius:4px;color:var(--ink)}
+.fld input:focus,.fld textarea:focus{outline:none;border-color:var(--royal)}
+.fld textarea{min-height:96px;resize:vertical}
+.nav-btns{display:flex;justify-content:space-between;margin-top:1.8rem;gap:1rem}
+.back{background:none;border:none;font:700 .95rem var(--sans);color:var(--mute);cursor:pointer;padding:.5rem 0}
+.hide{visibility:hidden}
+.note{font-size:.85rem;color:var(--mute);margin-top:1rem}
+.ok{display:none;font-weight:700;color:var(--royal);margin-top:1rem}
+
+/* footer */
+footer{background:var(--navy);color:#bcd2ea;padding:4.6rem 0 0;position:relative;overflow:hidden}
+footer::before{content:"";position:absolute;inset:0;background:var(--facet);opacity:.6}
+.f-top{position:relative;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.6rem;padding-bottom:3rem}
+.f-logo{display:inline-block;background:#fff;padding:.5rem .8rem;border-radius:6px}
+.f-logo img{height:88px;width:auto}
+footer p.tag{margin-top:1.2rem;max-width:21rem;font-size:.95rem}
+footer h4{font:700 .78rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--sky);margin-bottom:1.1rem}
+footer li{margin-bottom:.6rem;font-size:.96rem}
+footer a:hover{color:#fff}
+.f-bot{position:relative;border-top:1px solid rgba(255,255,255,.16);padding:1.4rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.9rem}
+.f-bot a{color:var(--sky);font-weight:700;border-bottom:1px solid currentColor}
+
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:1020px){
+  .menu,.nav>.wrap>.btn{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;position:absolute;top:92px;left:0;right:0;flex-direction:column;background:#fff;padding:1.2rem 4%;border-bottom:2px solid var(--navy);gap:1rem}
+  .hero-head,.res-grid,.com-grid,.stmt-grid,.est-grid{grid-template-columns:1fr;gap:2.6rem}
+  .doors{grid-template-columns:1fr;min-height:0}
+  .door{min-height:460px}
+  .door.d1{clip-path:polygon(0 0,100% 0,100% 94%,0 100%);margin:0;padding:0 8% 4rem}
+  .door.d2{clip-path:polygon(0 6%,100% 0,100% 100%,0 100%);margin-top:-2rem;padding:0 8% 3rem}
+  .seam{display:none}
+  .facets .wrap{grid-template-columns:1fr}
+  .facet,.facet+.facet{padding:1.4rem 0;border-left:none}
+  .facet+.facet{border-top:1px solid rgba(255,255,255,.18)}
+  .com{margin-top:-2rem}
+  .res-art{padding:0 0 3rem 2rem}
+  .team{max-width:320px}
+  .f-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .util .r{gap:1rem}
+  .util .l{display:none}
+  .logo img{height:60px}
+  .nav .wrap{height:80px}
+  .menu.open{top:80px}
+  .chips,.fld,.opts{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr 1fr 1fr}
+  .opt label{padding:1rem .3rem;font-size:.9rem}
+  .flow{padding:1.5rem}
+  .mos{grid-template-columns:1fr 1fr}
+  .mos .m1{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
+  .f-top{grid-template-columns:1fr}
+  .res-badge{right:0}
+}
+</style>
+</head>
+<body>
+
+<div class="util"><div class="wrap">
+  <span class="l">Residential and commercial cleaning in Edmonton and surrounding communities</span>
+  <span class="r"><a href="tel:7808600677">780-860-0677</a><a href="mailto:diamondcleaningltd@outlook.com">diamondcleaningltd@outlook.com</a></span>
+</div></div>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="https://www.diamond-cleaning.ca/index.html" aria-label="Diamond Shine Cleaning home"><img src="images/logo.png" alt="Diamond Shine Residential &amp; Commercial Cleaning Service Ltd."></a>
+  <nav><ul class="menu" id="menu">
+    <li><a href="https://www.diamond-cleaning.ca/index.html">Home</a></li>
+    <li><a href="https://www.diamond-cleaning.ca/about.html">Why Choose Us</a></li>
+    <li><a href="https://www.diamond-cleaning.ca/edmonton-commercial-cleaning.html">Industrial</a></li>
+    <li><a href="https://www.diamond-cleaning.ca/commercial.html">Commercial</a></li>
+    <li><a href="https://www.diamond-cleaning.ca/edmonton-house-cleaning.html">Residential</a></li>
+    <li><a href="https://www.diamond-cleaning.ca/contact.html">Contact Us</a></li>
+  </ul></nav>
+  <a class="btn btn-navy" href="#estimate">Free estimate</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+</div></header>
+
+<main>
+<!-- HERO: two doors -->
+<section class="hero" id="home">
+  <div class="wrap hero-head">
+    <h1>Home or office, one team gives you the <i>Diamond Shine.</i></h1>
+    <p>Whether you need your home or office cleaned, Diamond Shine Cleaning is the one cleaning company that can handle it all.</p>
+  </div>
+  <div class="doors">
+    <a class="door d1" href="#residential">
+      <div class="ph"><img src="images/hero-residential.jpg" alt="Cleaner wiping a sunlit living room in an Edmonton home" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="tag"><i class="dia"></i>At home</div>
+        <h2>House cleaning</h2>
+        <ul><li>Weekly cleaning</li><li>One-time deep clean</li><li>Move-out cleaning</li></ul>
+        <span class="go">See residential <span>→</span></span>
+      </div>
+    </a>
+    <a class="door d2" href="#commercial">
+      <div class="ph"><img src="images/hero-commercial.jpg" alt="Cleaner polishing a bright modern office" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="tag"><i class="dia"></i>At work</div>
+        <h2>Commercial &amp; industrial</h2>
+        <ul><li>Full janitorial</li><li>Carpet care</li><li>Hard floor care</li></ul>
+        <span class="go">See commercial <span>→</span></span>
+      </div>
+    </a>
+    <div class="seam"><div>Free<br>estimates<small>Call or click</small></div></div>
+  </div>
+</section>
+
+<!-- FACETS -->
+<section class="facets"><div class="wrap">
+  <div class="facet"><div class="gem">1</div><div><b>Free estimates</b><span>For homes and businesses alike.</span></div></div>
+  <div class="facet"><div class="gem">2</div><div><b>No long term contracts</b><span>Flexible plans without the paperwork.</span></div></div>
+  <div class="facet"><div class="gem">3</div><div><b>Customized service plans</b><span>Built around your space and schedule.</span></div></div>
+</div></section>
+
+<!-- RESIDENTIAL -->
+<section class="res" id="residential">
+  <div class="wrap res-grid">
+    <div class="rv">
+      <span class="kicker">Residential</span>
+      <h2>Edmonton <i>house cleaning</i> for real life.</h2>
+      <p class="lead">Full maid services for Edmonton homeowners and nearby communities, from regular weekly cleaning to a one-time deep clean. Free estimates.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-t="0">Weekly</button>
+        <button class="tab" role="tab" aria-selected="false" data-t="1">One-time deep clean</button>
+        <button class="tab" role="tab" aria-selected="false" data-t="2">Move-out &amp; renovation</button>
+      </div>
+      <p class="panel" id="panel">Regular weekly cleaning keeps your home fresh without taking your weekend. Tell us the routine and we will build a plan around it.</p>
+      <ul class="chips">
+        <li><i class="dia"></i>After construction clean-ups</li>
+        <li><i class="dia"></i>Carpet and upholstery cleaning</li>
+        <li><i class="dia"></i>Tile and grout cleaning</li>
+        <li><i class="dia"></i>Window washing</li>
+        <li><i class="dia"></i>Move-out cleaning and more</li>
+      </ul>
+      <a class="link" href="https://www.diamond-cleaning.ca/edmonton-house-cleaning.html">Yes! Tell me more about house cleaning <span>→</span></a>
+    </div>
+    <div class="res-art rv">
+      <div class="res-badge">Free<br>estimates<small>Edmonton &amp; area</small></div>
+      <div class="ph res-main"><img src="images/residential-kitchen.jpg" alt="Sparkling clean kitchen with sunlight on the counters" onerror="this.style.display='none'"></div>
+      <div class="ph res-small"><img src="images/carpet-upholstery.jpg" alt="Upholstery and carpet being deep cleaned" onerror="this.style.display='none'"></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL -->
+<section class="com" id="commercial">
+  <div class="wrap com-grid">
+    <div class="mos rv">
+      <div class="ph m1"><img src="images/commercial-clinic.jpg" alt="Spotless medical clinic waiting room" onerror="this.style.display='none'"></div>
+      <div class="ph m2"><img src="images/commercial-warehouse.jpg" alt="Industrial floor scrubber in a large warehouse" onerror="this.style.display='none'"></div>
+      <div class="ph m3"><img src="images/floor-care.jpg" alt="Close up of polished hard surface floor" onerror="this.style.display='none'"></div>
+    </div>
+    <div class="rv">
+      <span class="kicker">Commercial &amp; industrial</span>
+      <h2>Edmonton <i>commercial</i> and industrial cleaning.</h2>
+      <p class="lead">Full commercial cleaning for Edmonton businesses. No long term contracts, customized service plans and free estimates.</p>
+      <ul class="who">
+        <li>Medical clinics</li><li>Warehouses</li><li>Fitness centres</li><li>Car dealers</li><li>Churches</li><li>Transportation</li>
+      </ul>
+      <ul class="menu-list">
+        <li>Full janitorial services<em>01</em></li>
+        <li>Carpet and upholstery cleaning<em>02</em></li>
+        <li>Hard surface floor care<em>03</em></li>
+      </ul>
+      <a class="link" href="https://www.diamond-cleaning.ca/commercial.html">More about commercial cleaning <span>→</span></a>
+      &nbsp;&nbsp;&nbsp;
+      <a class="link" href="https://www.diamond-cleaning.ca/edmonton-commercial-cleaning.html">Industrial cleaning <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="stmt">
+  <div class="wrap stmt-grid">
+    <div class="ph team rv"><img src="images/cleaning-team.jpg" alt="Diamond Shine cleaner in uniform smiling in a bright room" onerror="this.style.display='none'"></div>
+    <div class="rv">
+      <span class="kicker">Why choose us</span>
+      <h2>Get the Diamond Shine <span>all the time.</span></h2>
+      <p>One cleaning company for your house and your office. That means one team to call, one standard of clean and one friendly estimate.</p>
+      <a class="btn btn-navy" href="https://www.diamond-cleaning.ca/about.html">Why choose Diamond Shine</a>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE -->
+<section class="est" id="estimate">
+  <div class="wrap est-grid">
+    <div class="rv">
+      <span class="kicker">Free estimate</span>
+      <h2>Tell us what needs <i>to shine.</i></h2>
+      <p class="lead">Three quick steps and Rose will get back to you. Prefer to talk? Call anytime.</p>
+      <ul class="contact-list">
+        <li><small>Cell</small><b><a href="tel:7808600677">780-860-0677</a></b></li>
+        <li><small>Office</small><b><a href="tel:7804446141">780-444-6141</a></b></li>
+        <li><small>Fax</small><b>780-444-6124</b></li>
+        <li><small>Email</small><b><a href="mailto:diamondcleaningltd@outlook.com">diamondcleaningltd@outlook.com</a></b></li>
+        <li><small>Serving</small><b>Edmonton, Alberta and surrounding communities</b></li>
+      </ul>
+    </div>
+    <form class="flow rv" id="flow" novalidate>
+      <div class="steps"><span class="on"></span><span></span><span></span></div>
+      <div class="step on" data-s="0">
+        <h3>What are we cleaning?</h3>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="type" id="t1" value="Home" checked><label for="t1">Home<span>House cleaning</span></label></div>
+          <div class="opt"><input type="radio" name="type" id="t2" value="Office or business"><label for="t2">Office<span>Commercial</span></label></div>
+          <div class="opt"><input type="radio" name="type" id="t3" value="Industrial"><label for="t3">Industrial<span>Warehouse, shop</span></label></div>
+        </div>
+      </div>
+      <div class="step" data-s="1">
+        <h3>What do you need?</h3>
+        <div class="svcs" id="svcs"></div>
+      </div>
+      <div class="step" data-s="2">
+        <h3>Where should we reach you?</h3>
+        <div class="fld">
+          <label>Your name<input type="text" name="name" id="f-name" autocomplete="name"></label>
+          <label>Phone<input type="tel" name="phone" id="f-phone" autocomplete="tel"></label>
+          <label class="full">Email<input type="email" name="email" id="f-email" autocomplete="email"></label>
+          <label class="full">Anything else?<textarea name="msg" id="f-msg"></textarea></label>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <button type="button" class="back hide" id="back">← Back</button>
+        <button type="button" class="btn btn-navy" id="next">Next →</button>
+      </div>
+      <p class="note" id="note">Sending opens your email app with the details filled in.</p>
+      <p class="ok" id="ok">Thank you. Your email is ready to send to Diamond Shine Cleaning.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a class="f-logo" href="https://www.diamond-cleaning.ca/index.html"><img src="images/logo.png" alt="Diamond Shine Residential &amp; Commercial Cleaning Service Ltd."></a>
+        <p class="tag">One cleaning company for your home and your office. Serving Edmonton, Alberta and surrounding communities.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://www.diamond-cleaning.ca/index.html">Home</a></li>
+          <li><a href="https://www.diamond-cleaning.ca/about.html">Why Choose Us</a></li>
+          <li><a href="https://www.diamond-cleaning.ca/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://www.diamond-cleaning.ca/edmonton-house-cleaning.html">Residential</a></li>
+          <li><a href="https://www.diamond-cleaning.ca/commercial.html">Commercial</a></li>
+          <li><a href="https://www.diamond-cleaning.ca/edmonton-commercial-cleaning.html">Industrial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:7808600677">780-860-0677 (Cell)</a></li>
+          <li><a href="tel:7804446141">780-444-6141 (Office)</a></li>
+          <li><a href="mailto:diamondcleaningltd@outlook.com">diamondcleaningltd@outlook.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>&copy; 2026 Diamond Shine Residential &amp; Commercial Cleaning Service Ltd.</span>
+      <span>Design by <a href="https://www.dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var b=$('#burger'),m=$('#menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  var texts=[
+    'Regular weekly cleaning keeps your home fresh without taking your weekend. Tell us the routine and we will build a plan around it.',
+    'A one-time deep clean resets your whole home, ideal before guests, after a busy season or when you want a fresh start.',
+    'Moving out or finishing a renovation? We handle move-out cleaning and after construction clean-ups so the place is ready.'
+  ];
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false')});
+      t.setAttribute('aria-selected','true');
+      $('#panel').textContent=texts[+t.dataset.t];
+    });
+  });
+
+  var svc={
+    'Home':['Regular weekly cleaning','One-time deep clean','Move-out cleaning','After construction clean-up','Carpet and upholstery','Tile and grout','Window washing'],
+    'Office or business':['Full janitorial services','Carpet and upholstery cleaning','Hard surface floor care','Medical clinic','Fitness centre','Church','Car dealer'],
+    'Industrial':['Warehouse cleaning','Hard surface floor care','Transportation','Full janitorial services','Carpet and upholstery cleaning']
+  };
+  var step=0,steps=document.querySelectorAll('.step'),bars=document.querySelectorAll('.steps span'),next=$('#next'),back=$('#back');
+  function buildSvcs(){
+    var t=document.querySelector('input[name=type]:checked').value,h='';
+    svc[t].forEach(function(s,i){h+='<div class="opt"><input type="checkbox" id="s'+i+'" value="'+s+'"><label for="s'+i+'">'+s+'</label></div>'});
+    $('#svcs').innerHTML=h;
+  }
+  function show(){
+    steps.forEach(function(s,i){s.classList.toggle('on',i===step)});
+    bars.forEach(function(s,i){s.classList.toggle('on',i<=step)});
+    back.classList.toggle('hide',step===0);
+    next.textContent=step===2?'Send my request':'Next →';
+  }
+  next.addEventListener('click',function(){
+    if(step===0){buildSvcs()}
+    if(step<2){step++;show();return}
+    var name=$('#f-name').value.trim(),phone=$('#f-phone').value.trim(),email=$('#f-email').value.trim();
+    if(!name||(!phone&&!email)){$('#note').textContent='Please add your name and a phone number or email so we can reply.';$('#note').style.color='#b3261e';return}
+    var t=document.querySelector('input[name=type]:checked').value;
+    var picks=[].map.call(document.querySelectorAll('#svcs input:checked'),function(i){return i.value}).join(', ')||'Not selected';
+    var body='Type: '+t+'\nServices: '+picks+'\nName: '+name+'\nPhone: '+phone+'\nEmail: '+email+'\nNotes: '+$('#f-msg').value;
+    $('#ok').style.display='block';
+    window.location.href='mailto:diamondcleaningltd@outlook.com?subject='+encodeURIComponent('Free estimate request: '+t)+'&body='+encodeURIComponent(body);
+  });
+  back.addEventListener('click',function(){if(step>0){step--;show()}});
+  buildSvcs();
+})();
+</script>
+</body>
+</html>
